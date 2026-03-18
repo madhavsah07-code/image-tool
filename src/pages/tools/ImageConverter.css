@@ -1,0 +1,114 @@
+/* Image Converter page specific styles */
+
+.conv-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.conv-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.conv-tab:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.conv-tab.active {
+  border-color: var(--accent-primary);
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--accent-primary);
+  font-weight: 600;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.conv-tab-icon { font-size: 1rem; }
+.conv-tab-label { font-size: 0.85rem; }
+
+/* File list */
+.conv-file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.conv-file-list::-webkit-scrollbar { width: 5px; }
+.conv-file-list::-webkit-scrollbar-track { background: var(--bg-secondary); border-radius: 99px; }
+.conv-file-list::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 99px; }
+
+.conv-file-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.conv-file-row:hover {
+  border-color: rgba(99, 102, 241, 0.25);
+}
+
+.conv-thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+}
+
+.conv-file-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.conv-file-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.conv-file-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.conv-result-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .conv-tabs { gap: 6px; }
+  .conv-tab { padding: 8px 12px; }
+  .conv-tab-label { font-size: 0.775rem; }
+}

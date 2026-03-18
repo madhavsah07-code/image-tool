@@ -1,0 +1,64 @@
+.tools-page { padding-bottom: 80px; }
+
+.tools-hero {
+  text-align: center;
+  padding: 52px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.tools-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.tools-hero p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 500px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.tools-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+}
+
+.tools-info-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.tools-info-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tools-info-card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.tools-info-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .tools-info { grid-template-columns: 1fr; }
+}
