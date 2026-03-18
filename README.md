@@ -47,7 +47,11 @@ npm install
 npm run dev
 ```
 
+<<<<<<< HEAD
 The app will be available at `http://localhost:5173`.
+=======
+The app will be available at `https://image-tool-sepia-beta.vercel.app/`.
+>>>>>>> 41779da7e53f280d303acfb2dc4f2483ab4784e2
 
 ### Build for Production
 
@@ -144,3 +148,9 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ---
 
 <p align="center">Made with ❤️ — No files ever leave your device.</p>
+<<<<<<< HEAD
+=======
+
+
+yehmera read me file h sahi h 
+>>>>>>> 41779da7e53f280d303acfb2dc4f2483ab4784e2
